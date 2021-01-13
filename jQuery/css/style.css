@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+/*--
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+---*/
+body{
+ font-family:'Roboto', sans-serif;  
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Playfair Display', serif;
+}
+
+.section-padding-top{
+    padding-top 100px; ;
+}
+.section-padding-bottom{
+    padding-bottom:100px ;
+}
+.section-padding{
+    padding:0 100px ;
+}
+/* .....feature item.... */
+.section-title h6{
+    font-size:20px ;
+    color: red;
+    padding-bottom:5px ;
+    font-family:'Roboto', sans-serif;  
+}
+
+.section-title h3{
+    font-size: 30px;
+    color:#000 ;
+}
+.section-title{
+    padding-bottom:30px ;
+}
+
+.feature-item-1{
+    background-image:url(../img/i1.webp) ;
+}
+
+.feature-item-2{
+    background-image:url(../img/i2.jpg) ;
+}
+.feature-item-3{
+    background-image:url(../img/03.jpg) ;
+}
+.featured-item{
+    background-size:cover ;
+    background-position:center ;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height:450px ;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: .5s;
+}
+.featured-content{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    color:#fff ;
+
+}
+.featured-item:before{
+    position: absolute;
+    content:"" ;
+    left:0 ;
+    top: 0;
+    height:100% ;
+    width: 100%;
+    background: -webkit-linear-gradient(8deg, #18253e 1%, rgba(255,255,255,0) 9);
+    opacity: .5;
+    z-index: -1;
+}
+.featured-content h4{
+    font-size:26px ;
+}
+.featured-content span{
+    font-size: 18px;
+    display: block;
+}
+.featured-content ul li{
+    list-style:none ;
+    display: inline-block;
+    border-right:1px solid #fff ;
+    padding: 0 5px;
+    line-height:15px ;
+}
+.featured-content ul{
+    padding:0 ;
+    padding-top: 9px;
+}
+.featured-content ul li:last-child{
+    border-right:0 ;
+}
+.featured-content ul li:first-child{
+    padding-left: 0;
+}
+
+.featured-btn{
+    background-color: red;
+    color:#fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 0;
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+    transition: .5s;
+    display: none;
+    visibility: hidden;
+}
+
+.featured-btn:hover{
+    color: #fff;}
+
+.featured-item:hover .featured-btn{
+    left: 15px;
+    display: block;
+    visibility: visible;
+}
+.featured-item:hover .featured-content{
+    bottom: 60px;
+}
